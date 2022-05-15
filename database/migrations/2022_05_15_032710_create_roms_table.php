@@ -16,7 +16,7 @@ class CreateRomsTable extends Migration
         Schema::create('roms', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable(false);
-            $table->tinyInteger('capacity')->nullable(false);
+            $table->integer('capacity')->nullable(false);
             $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });

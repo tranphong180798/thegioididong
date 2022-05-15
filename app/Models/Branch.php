@@ -21,4 +21,9 @@ class Branch extends Model
         'lat',
         'status'
     ];
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d h:i:s',
+        'updated_at' => 'datetime:Y-m-d h:i:s',
+    ];
 }

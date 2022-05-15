@@ -16,4 +16,9 @@ class Product_information extends Model
         'key',
         'value'
     ];
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d h:i:s',
+        'updated_at' => 'datetime:Y-m-d h:i:s',
+    ];
 }

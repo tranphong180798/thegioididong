@@ -15,4 +15,9 @@ class Product_color extends Model
         'product_id',
         'color_id',
     ];
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d h:i:s',
+        'updated_at' => 'datetime:Y-m-d h:i:s',
+    ];
 }

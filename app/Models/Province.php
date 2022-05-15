@@ -17,4 +17,9 @@ class Province extends Model
         'province_code',
         'status',
     ];
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d h:i:s',
+        'updated_at' => 'datetime:Y-m-d h:i:s',
+    ];
 }

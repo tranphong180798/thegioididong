@@ -22,4 +22,9 @@ class Customer extends Model
         'status',
         'type'
     ];
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d h:i:s',
+        'updated_at' => 'datetime:Y-m-d h:i:s',
+    ];
 }

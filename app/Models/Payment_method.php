@@ -17,4 +17,9 @@ class Payment_method extends Model
         'index',
         'status'
     ];
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d h:i:s',
+        'updated_at' => 'datetime:Y-m-d h:i:s',
+    ];
 }

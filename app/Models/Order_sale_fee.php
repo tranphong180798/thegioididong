@@ -16,4 +16,9 @@ class Order_sale_fee extends Model
         'sale_fee_code',
         'value'
     ];
+
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d h:i:s',
+        'updated_at' => 'datetime:Y-m-d h:i:s',
+    ];
 }

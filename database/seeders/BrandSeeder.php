@@ -29,7 +29,7 @@ class BrandSeeder extends Seeder
         for ($i = 0; $i < count($arrayNameBrand); $i++) {
             DB::table('brands')->insert([
                 'name' => $arrayNameBrand[$i],
-                'logo_path' => $arrayLogoBrand[$i],
+                'logo' => $arrayLogoBrand[$i],
             ]);
         }
 
