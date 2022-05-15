@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Api\Upload\UploadImageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -29,7 +28,10 @@ Route::group(['namespace'=>'Api'], function (){
         Route::get('get-ward', 'AddressController@getWard')->name('api.address.get_ward');
     });
     Route::group(['namespace'=>'Upload','prefix'=>'upload'], function (){
-        Route::post('upload-image', [UploadImageController::class,'uploadImage']);
-        Route::post('upload-image-ckeditor', [UploadImageController::class,'uploadImageCkeditor'])->name('api.upload.ckeditor');
     });
+});
+
+
+// Insert data province,district,ward
+Route::get('insertDataProvince', function(){
 });

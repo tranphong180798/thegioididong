@@ -2,18 +2,12 @@
 <html lang="en">
 <head>
     @include('web.Layouts.header_detail_product')
-    @include('web.Layouts.menu-top')
-    <meta charset="utf-8">
-    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
-    <!--  All snippets are MIT license http://bootdey.com/license -->
     <title>Shop cart - Bootdey.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+@include('web.Layouts.banner-media')
+@include('web.Layouts.menu-top')
 <div class="container pb-5 mt-n2 mt-md-n3" style="margin-top: 30px;background-color:#f1f1f1">
     <div class="row" style="margin-top: 30px">
         <div class="col-xl-9 col-md-8">

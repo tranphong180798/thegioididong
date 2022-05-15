@@ -29,6 +29,16 @@ class DashboardController extends Controller
         return view('web.Pages.checkout-product');
     }
 
+    public function successProduct()
+    {
+        return view('web.Pages.success_product');
+    }
+
+    public function shipper_product()
+    {
+        return view('web.Pages.shipper.index');
+    }
+
     public function logout()
     {
         return 123;
